@@ -1,13 +1,16 @@
 #include<studio.h>
 Main()
 {
- Int age;
- Char[10];
- Printf("Enter name:");
- Scanf("%s",&name);
-Printf("you said your name is:",name);
-Printf("Enter age:");
-Scanf("%d",&age);
-Printf ("you said your age is:",age);
+ double first,second,temp;
+ Printf("Enter first number:");
+ Scanf("%lf",&first);
+ Printf("Enter second number:");
+ Scanf("%lf,&second");
+ temp=first;
+ first=second;
+ second=temp;
+Printf ("\nafter swapping,firstnumber=%2lf",first);
+printf("after swapping,second number=%2lf",second);
+return 0;
 }
 
